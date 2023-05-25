@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+import { SectionWrapper } from "../hoc";
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
@@ -47,9 +48,7 @@ const About = () => {
         stacks to develop scalable and modular projects. I possess excellent
         learning ability and a high level of adaptability to different work
         environments and teams. I am passionate about technology and I love
-        working on projects that allow me to learn and grow professionally. I am
-        constantly seeking new challenges and I am willing to face new obstacles
-        and problems to enhance my skills and deliver high-quality solutions.
+        working on projects that allow me to learn and grow professionally.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
@@ -61,4 +60,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default SectionWrapper(About, "about");
