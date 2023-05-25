@@ -20,9 +20,7 @@ const Hero = () => {
             <span className="text-[#915eff]">Alexander Baquero</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            FullStack developer with both professional and academic background
-            in creating Web applications. I use the MERN or MEVN stacks to
-            develop scalable and modular projects.
+            I develop user interfaces and web applications.
           </p>
         </div>
       </div>
