@@ -14,7 +14,10 @@ import {
   mongodb,
   git,
   figma,
-  docker,
+  vue,
+  pinia,
+  sass,
+  express,
   soporte,
   henry,
   btp,
@@ -61,6 +64,10 @@ const technologies = [
     icon: css,
   },
   {
+    name: "SASS",
+    icon: sass,
+  },
+  {
     name: "JavaScript",
     icon: javascript,
   },
@@ -77,8 +84,20 @@ const technologies = [
     icon: redux,
   },
   {
+    name: "Vue 3",
+    icon: vue,
+  },
+  {
+    name: "Pinia",
+    icon: pinia,
+  },
+  {
     name: "Node JS",
     icon: nodejs,
+  },
+  {
+    name: "Express",
+    icon: express,
   },
   {
     name: "MongoDB",
@@ -91,10 +110,6 @@ const technologies = [
   {
     name: "figma",
     icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
   },
 ];
 

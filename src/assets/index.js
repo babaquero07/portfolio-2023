@@ -8,7 +8,6 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 
 import css from "./tech/css.png";
-import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
@@ -19,6 +18,11 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
+import vue from './tech/vue.png';
+import pinia from "./tech/pinia.svg";
+import sass from './tech/sass.svg';
+import express from './tech/express.png';
+
 import threejs from "./tech/threejs.svg";
 
 import soporte from "./company/soporte.svg";
@@ -40,7 +44,6 @@ export {
   menu,
   close,
   css,
-  docker,
   figma,
   git,
   html,
@@ -51,6 +54,10 @@ export {
   redux,
   tailwind,
   typescript,
+  vue,
+  pinia,
+  sass,
+  express,
   threejs,
   soporte,
   henry,
