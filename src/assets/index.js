@@ -4,6 +4,7 @@ import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
+import play from "./play-button.svg";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -18,10 +19,10 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
-import vue from './tech/vue.png';
+import vue from "./tech/vue.png";
 import pinia from "./tech/pinia.svg";
-import sass from './tech/sass.svg';
-import express from './tech/express.png';
+import sass from "./tech/sass.svg";
+import express from "./tech/express.png";
 
 import threejs from "./tech/threejs.svg";
 
@@ -34,6 +35,17 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import pokemonStatic from "./pokemonStatics.png";
+import rickAndMorty from "./rickAndMorty.png";
+import spotifu from "./spotifu.jpg";
+import batataBit from "./batataBit.jpg";
+import calendar from "./googleCalendar.jpg";
+import countrySearch from "./countrySearch.png";
+import ecommerce from "./e-commerce.png";
+import inmobilApp from "./inmobilApp.jpg";
+import foodRecipes from "./foodRecipes.jpg";
+import triviaChallenge from "./triviaChallenge.jpg";
+
 export {
   logo,
   backend,
@@ -41,6 +53,7 @@ export {
   mobile,
   web,
   github,
+  play,
   menu,
   close,
   css,
@@ -63,6 +76,16 @@ export {
   henry,
   btp,
   gcf,
+  pokemonStatic,
+  rickAndMorty,
+  spotifu,
+  batataBit,
+  calendar,
+  countrySearch,
+  ecommerce,
+  inmobilApp,
+  foodRecipes,
+  triviaChallenge,
   carrent,
   jobit,
   tripguide,

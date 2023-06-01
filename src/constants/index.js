@@ -22,6 +22,16 @@ import {
   henry,
   btp,
   gcf,
+  pokemonStatic,
+  rickAndMorty,
+  spotifu,
+  batataBit,
+  calendar,
+  countrySearch,
+  ecommerce,
+  inmobilApp,
+  foodRecipes,
+  triviaChallenge,
   carrent,
   jobit,
   tripguide,
@@ -201,67 +211,271 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Pokemon Static",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Static web application which provides users with a dynamic experience centered around a vast collection of Pokémon. Allows users to explore and engage with numerous Pokémon, enabling them to save their favorite creatures and delve into comprehensive details about each individual Pokémon's attributes and characteristics",
     tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
+        name: "NextJS",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "TypeScript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CanvasConfetti",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: pokemonStatic,
+    deploy_link: "https://pokemon-static-gold.vercel.app/",
+    source_code_link: "https://github.com/babaquero07/pokemon-static-NextJS",
   },
   {
-    name: "Job IT",
+    name: "Rick and Morty - Vanilla JS",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "The project connects with Rick and Morty API and retrieve information about 150 characters. Allows the user interact with the API-provided information by applying filters for gender, status, and species. Additionally, the project includes a page for users to add, edit, and delete comments.",
     tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
+        name: "HTML",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "JavaScript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "SASS",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: rickAndMorty,
+    deploy_link: "https://babaquero07.github.io/taller-unidad-1-2/home.html",
+    source_code_link: "https://github.com/babaquero07/taller-unidad-1-2",
   },
   {
-    name: "Trip Guide",
+    name: "Spotifu",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Exact clone of Spotify web interface. The whole project will be adapted only by changing one font size. Made with modern layout techniques and 100% accessible.",
     tags: [
       {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
+        name: "HTML",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "CSS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "FlexBox",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: spotifu,
+    deploy_link: "https://babaquero07.github.io/Spotifu/",
+    source_code_link: "https://github.com/babaquero07/Spotifu",
+  },
+  {
+    name: "BatataBit",
+    description:
+      "Project developed in the Mobile First course at Platzi, which emphasizes the implementation of the BEM methodology for CSS.",
+    tags: [
+      {
+        name: "HTML",
+        color: "green-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "BEM",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: batataBit,
+    deploy_link: "https://babaquero07.github.io/batata-bit/",
+    source_code_link: "https://github.com/babaquero07/Spotifu",
+  },
+  {
+    name: "Calendar",
+    description: "Clone of Google Calendar web interface.",
+    tags: [
+      {
+        name: "HTML",
+        color: "green-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "GRID",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: calendar,
+    deploy_link: "https://babaquero07.github.io/batata-bit/",
+    source_code_link: "https://github.com/babaquero07/Spotifu",
+  },
+  {
+    name: "Country Search",
+    description:
+      "Interactive experience where users can search for and explore detailed information about countries, utilizing modern technologies such as Apollo Client, React, and GraphQL to achieve a smooth and efficient user interface.",
+    tags: [
+      {
+        name: "ApolloClient",
+        color: "green-text-gradient",
+      },
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Graphql",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: countrySearch,
+    deploy_link: "http://kimchechallenge-umber.vercel.app/",
+    source_code_link: "https://github.com/babaquero07/kimchechallenge",
+  },
+  {
+    name: "E-commerce",
+    description:
+      "Group's bootcamp final project showcases our proficiency in a wide range of technologies, demonstrating our ability to build a fully functional eCommerce platform. With features such as payment integration, product reviews, a chatbot, and an admin panel, our platform provides a seamless and intuitive shopping experience for users while offering convenient management tools for administrators.",
+    tags: [
+      {
+        name: "Node Js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "SASS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Redux",
+        color: "white",
+      },
+      {
+        name: "PostgreSQL",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Express",
+        color: "white",
+      },
+    ],
+    image: ecommerce,
+    deploy_link:
+      "https://www.linkedin.com/posts/carla-faes_buenas-tardes-quiero-compartirles-el-video-ugcPost-6920831465534427136-VD5k?utm_source=share&utm_medium=member_desktop",
+    source_code_link: "https://github.com/E-commerce-pf",
+  },
+  {
+    name: "Food Recipes",
+    description:
+      "User-friendly interface for exploring, discovering, and creating food recipes. With the integration of the spoonacular API, users have access to a vast collection of recipes along with relevant details. Whether searching for specific recipes, filtering and sorting results, or creating personal recipes, the application provides a seamless and engaging experience for food enthusiasts and home cooks alike.",
+    tags: [
+      {
+        name: "Node Js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Sequelize",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Redux",
+        color: "white",
+      },
+      {
+        name: "PostgreSQL",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Express",
+        color: "white",
+      },
+    ],
+    image: foodRecipes,
+    deploy_link: "https://food-recipes-one.vercel.app/",
+    source_code_link: "https://github.com/InmobilApp",
+  },
+  {
+    name: "InmobilApp",
+    description:
+      "Group's bootcamp final project. With features such as payment integration, product reviews, and an admin panel, our platform provides a seamless and intuitive shopping experience for users while offering convenient management tools for administrators.",
+    tags: [
+      {
+        name: "Node Js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Mongoose",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Redux",
+        color: "white",
+      },
+      {
+        name: "MongoDB",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Express",
+        color: "white",
+      },
+    ],
+    image: inmobilApp,
+    deploy_link: "https://inmobilapp.vercel.app/login",
+    source_code_link: "https://github.com/InmobilApp",
+  },
+  {
+    name: "Trivia Challenge",
+    description: "FullStack [MERN] technical test. ",
+    tags: [
+      {
+        name: "Node Js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Mongoose",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Redux",
+        color: "white",
+      },
+      {
+        name: "MongoDB",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Express",
+        color: "white",
+      },
+    ],
+    image: triviaChallenge,
+    deploy_link: "https://trivia-challenge-ten.vercel.app/",
+    source_code_link: "https://github.com/babaquero07/trivia-challenge-client",
   },
 ];
 
