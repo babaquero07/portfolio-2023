@@ -9,7 +9,7 @@ import {
   Navbar,
   Tech,
   Works,
-  StarsCanvas,
+  // StarsCanvas,
 } from "./components";
 
 const App = () => {
@@ -27,9 +27,23 @@ const App = () => {
         {/* <Feedbacks /> */}
         <div className="relative z-0">
           <Contact />
-          <StarsCanvas />
+          {/* <StarsCanvas /> */}
         </div>
       </div>
+      <footer>
+        <p className="text-center">
+          © Adapted from{" "}
+          <a
+            className="blue-text-gradient"
+            href="https://www.youtube.com/@javascriptmastery"
+            rel="noreferrer"
+            target="_blank"
+          >
+            JavaScript Mastery
+          </a>
+          . All rights reserved.
+        </p>
+      </footer>
     </BrowserRouter>
   );
 };
