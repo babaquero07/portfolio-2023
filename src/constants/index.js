@@ -1,7 +1,5 @@
 import {
-  mobile,
   backend,
-  creator,
   web,
   javascript,
   typescript,
@@ -9,7 +7,6 @@ import {
   css,
   reactjs,
   redux,
-  tailwind,
   nodejs,
   mongodb,
   git,
@@ -32,10 +29,6 @@ import {
   inmobilApp,
   foodRecipes,
   triviaChallenge,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
 } from "../assets";
 
 export const navLinks = [
@@ -316,8 +309,8 @@ const projects = [
       },
     ],
     image: calendar,
-    deploy_link: "https://babaquero07.github.io/batata-bit/",
-    source_code_link: "https://github.com/babaquero07/Spotifu",
+    deploy_link: "https://babaquero07.github.io/calendario/",
+    source_code_link: "https://github.com/babaquero07/calendario",
   },
   {
     name: "Country Search",
@@ -338,7 +331,7 @@ const projects = [
       },
     ],
     image: countrySearch,
-    deploy_link: "http://kimchechallenge-umber.vercel.app/",
+    deploy_link: "https://kimchechallenge-umber.vercel.app",
     source_code_link: "https://github.com/babaquero07/kimchechallenge",
   },
   {
