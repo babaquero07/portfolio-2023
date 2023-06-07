@@ -1,0 +1,125 @@
+{
+    "navBar": {
+        "title": {
+            "name": "Alexander Baquero",
+            "text": "Portafolio"
+        },
+        "links": {
+            "about": "Acerca de mí",
+            "work": "Experiencia",
+            "contact": "Contáctame"
+        }
+    },
+    "hero": {
+        "greeting": "Hola, soy",
+        "text": "Desarrollo interfaces de usuario y aplicaciones web."
+    },
+    "about": {
+        "subText": "Introducción",
+        "headText": "Perfil profesional",
+        "profileText": "Frontend Developer con experiencia profesional y académica en la creación de aplicaciones web. Utilizo los stacks MERN o MEVN para generar proyectos escalables y moduralizables. Excelente capacidad de aprendizaje y una gran adaptabilidad a diferentes entornos y grupos laborales. Me apasiona la tecnología y me encanta trabajar en proyectos que me permitan aprender y crecer profesionalmente."
+    },
+    "experience": {
+        "subText": "Lo que he hecho hasta ahora",
+        "headText": "Experiencia laboral.",
+        "workExperience": {
+            "gcf": {
+                "date": "Junio 2022 - Actualidad",
+                "responsabilites": ["Diseño y desarrollo de aplicaciones web: Trabajar en la creación de aplicaciones web utilizando herramientas como HTML, CSS, JavaScript y otras tecnologías de programación.",
+                "Implementación de servidores y APIs: Creación de servidores y APIs utilizando tecnologías como Node.js y Express, para permitir que las aplicaciones web se comuniquen con bases de datos y otros servicios.",
+                "Pruebas y depuración de aplicaciones: Identificación y corrección de errores y problemas en las aplicaciones desarrolladas.",
+                "Colaboración con otros miembros del equipo de desarrollo: Trabajo en conjunto con otros desarrolladores, diseñadores y profesionales de la tecnología para completar proyectos y lograr objetivos comunes."]
+            },
+            "btp": {
+                "date": "Abril 2022 - Mayo 2022",
+                "responsabilites": ["Desarrollo y mantenimiento de aplicaciones web utilizando Next.js, Python, FastAPI, MongoDB y otras tecnologías relacionadas.",
+                "Mantenimiento del software",
+                "Creación de nuevas funcionalidades en base a los requerimientos del cliente",
+                "Proponer ideas de mejora del software."]
+            },
+            "soporte": {
+                "date": "Agosto 2020 - Febrero 2021",
+                "responsabilites": ["Proyecto Coca-Cola FEMSA.",
+                "Atender las consultas de apoyo de los clientes.",
+                "Administración de software y herramientas de asistencia técnica.",
+                "Realizar mantenimiento preventivo y correctivo de los equipos de computo",
+                "Delegar las consultas a el canal de apoyo apropiado.",
+                "Diagnóstico y solución de problemas de los clientes.",
+                "Estar al día en los productos y servicios de la empresa."]
+            },
+            "henryTA": {
+                "date": "Enero 2022 - Marzo 2022",
+                "responsabilites": ["Coordinar a un grupo de estudiantes para lograr la integración al grupo de estudio.",
+                "Orientar a los estudiantes en los primeros pasos de la cursada.",
+                "Asistir la resolución de ejercicios y promover la colaboración grupal (Pair Programming).",
+                "Proponer ideas para la mejora de los procesos del Bootcamp."]
+            }
+        }
+    },
+    "works": {
+        "subText": "Mi trabajo",
+        "headText": "Proyectos.",
+        "description": "Los siguientes proyectos muestran mis habilidades y experiencia en el desarrollo web. Cada proyecto va acompañado de una breve descripción e incluye enlaces a sus respectivos repositorios de código y demostraciones en vivo. Estos proyectos son ejemplos tangibles de mi capacidad para abordar problemas complejos, trabajar con diversas tecnologías y gestionar proyectos con éxito.",
+        "projects": {
+            "pokemon": {
+                "description": "Aplicación web estática que proporciona a los usuarios una experiencia dinámica centrada en una amplia colección de pokémones. Permite a los usuarios explorar e interactuar con numerosos pokémones, lo que les permite guardar sus criaturas favoritas y profundizar en detalles completos sobre los atributos y características de cada pokémon."
+            },
+            "rick-and-morty": {
+                "description": "El proyecto se conecta con la API de Rick and Morty y recupera información de unos 150 caracteres. Permite al usuario interactuar con la información proporcionada por la API mediante la aplicación de filtros por género, estado y especie. Además, el proyecto incluye una página para que los usuarios agreguen, editen y eliminen comentarios."
+            },
+            "spotifu": {
+                "description": "Clon exacto de la interfaz web de Spotify. Todo el proyecto se adaptará solo cambiando un tamaño de fuente. Realizado con modernas técnicas de maquetación y 100% accesible."
+            },
+            "batata-bit": {
+                "description": "Proyecto desarrollado en el curso Mobile First de Platzi, que enfatiza la implementación de la metodología BEM para CSS."
+            },
+            "calendar": {
+                "description": "Clon de la interfaz web de Google Calendar."
+            },
+            "country-search": {
+                "description": "Experiencia interactiva donde los usuarios pueden buscar y explorar información detallada sobre países, utilizando tecnologías modernas como Apollo Client, React y GraphQL para lograr una interfaz de usuario fluida y eficiente."
+            },
+            "e-commerce": {
+                "description": "Proyecto final y grupal del bootcamp Soy Henry. Prueba nuestra competencia en una amplia gama de tecnologías, lo que demuestra nuestra capacidad para construir una plataforma de comercio electrónico completamente funcional. Con funciones como integración de pagos, reseñas de productos, un chatbot y un panel de administración, la plataforma brinda una experiencia de compra intuitiva y sin inconvenientes para los usuarios, al tiempo que ofrece herramientas de administración convenientes para los administradores del sitio."
+            },
+            "food-recipes": {
+                "description": "Interfaz fácil de usar para explorar, descubrir y crear recetas de comida. Con la integración de la API Spoonacular, los usuarios tienen acceso a una amplia colección de recetas junto con detalles relevantes. Ya sea que busque recetas específicas, filtre y clasifique los resultados o cree recetas personales, la aplicación brinda una experiencia atractiva y sin interrupciones tanto para los entusiastas de la comida como para los cocineros caseros."
+            },
+            "inmobil-app": {
+                "description": "Proyecto final y grupal del bootcamp Soy Henry. Cuenta con funciones como la integración de pagos, revisiones de productos y un panel de administración, nuestra plataforma proporciona una experiencia de compra intuitiva y sin inconvenientes para los usuarios al tiempo que ofrece herramientas de administración convenientes para los administradores."
+            },
+            "trivia-challenge": {
+                "description": "Prueba técnica FullStack con el stack [MERN]."
+            }
+        }
+    },
+    "contact": {
+        "subText": "Ponerse en contacto",
+        "headText": "Contáctame.",
+        "form": {
+            "labels": {
+                "name": "Tu nombre",
+                "email": "Tu correo",
+                "message": "Tu mensaje"
+            },
+            "inputs": {
+                "placeholder": {
+                    "name": "Nombre completo",
+                    "email": "Correo",
+                    "message": "Tu mensaje..."
+                }
+            },
+            "button": {
+                "stateText": {
+                    "default": "Enviar",
+                    "loading": "Enviando..."
+                }
+            },
+            "submit": {
+                "successfull": "Gracias. Me pondré en contacto contigo lo antes posible.",
+                "error": "Algo salió mal."
+            }
+        }
+    }
+}
+

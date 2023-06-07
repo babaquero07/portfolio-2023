@@ -6,6 +6,8 @@ import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 
+import { useTranslation } from "react-i18next";
+
 const ServiceCard = ({ index, title, icon }) => {
   return (
     <Titl className="xs:w-[250px] w-full">
@@ -32,23 +34,20 @@ const ServiceCard = ({ index, title, icon }) => {
 };
 
 const About = () => {
+  const [t, i18n] = useTranslation("global");
+
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <p className={styles.sectionSubText}>{t("about.subText")}</p>
+        <h2 className={styles.sectionHeadText}>{t("about.headText")}</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I&apos;m a skilled software developer with both professional and
-        academic background in creating Web applications. I use the MERN or MEVN
-        stacks to develop scalable and modular projects. I possess excellent
-        learning ability and a high level of adaptability to different work
-        environments and teams. I am passionate about technology and I love
-        working on projects that allow me to learn and grow professionally.
+        {t("about.profileText")}
       </motion.p>
 
       <div className="mt-20 flex justify-center flex-wrap gap-10">

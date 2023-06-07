@@ -118,60 +118,33 @@ const technologies = [
 
 const experiences = [
   {
+    id: "soporte",
     title: "IT Support Specialist",
     company_name: "Soporte S.A",
     icon: soporte,
     iconBg: "#2b122b",
-    date: "August 2020 - February 2021",
-    points: [
-      "Coca-Cola FEMSA project.",
-      "Addressing customer support inquiries.",
-      "Managing software and technical support tools.",
-      "Performing preventive and corrective maintenance of computer equipment.",
-      "Escalating inquiries to the appropriate support channel.",
-      "Diagnosing and resolving customer issues.",
-      "Staying up-to-date on company products and services.",
-    ],
   },
   {
+    id: "henryTA",
     title:
       "[Academic] Bootcamp Assistant (TA) for Full-Stack Development students",
     company_name: "Henry",
     icon: henry,
     iconBg: "#000",
-    date: "January 2022 - March 2022",
-    points: [
-      "Coordinating a group of students to achieve integration within the study group.",
-      "Guiding students in their initial steps of the course.",
-      "Assisting in exercise resolution and promoting group collaboration (Pair Programming).",
-      "Proposing ideas for improving Bootcamp processes.",
-    ],
   },
   {
+    id: "btp",
     title: "Full stack Developer",
     company_name: "BTP Aquaforjas",
     icon: btp,
     iconBg: "#123247",
-    date: "April 2022 - May 2022",
-    points: [
-      "Developing and maintaining web applications using Next.js, Python, fastAPI, MongoDB and other related technologies.",
-      "Maintenance of analytical software.",
-      "Creating new functionalities based on client requirements.",
-      "Proposing software improvement ideas.",
-    ],
   },
   {
+    id: "gcf",
     title: "Frontend Developer",
     company_name: "GCF Aprende Libre",
     icon: gcf,
     iconBg: "#FFF",
-    date: "June 2022 - Present",
-    points: [
-      "Design and development of web applications: Working on the creation of web applications using tools such as HTML, CSS, JavaScript, and other programming technologies.",
-      "Implementation of servers and APIs: Creating servers and APIs using technologies such as Node.js and Express to enable web applications to communicate with databases and other services",
-      "Testing and debugging of applications: Identifying and fixing errors and issues in the developed applications.",
-      "Collaboration with other members of the development team: Working together with other developers, designers, and technology professionals to complete projects and achieve common goals.",
-    ],
   },
 ].reverse();
 
@@ -204,9 +177,8 @@ const testimonials = [
 
 const projects = [
   {
+    id: "pokemon",
     name: "Pokemon Static",
-    description:
-      "Static web application which provides users with a dynamic experience centered around a vast collection of Pokémon. Allows users to explore and engage with numerous Pokémon, enabling them to save their favorite creatures and delve into comprehensive details about each individual Pokémon's attributes and characteristics",
     tags: [
       {
         name: "NextJS",
@@ -226,9 +198,8 @@ const projects = [
     source_code_link: "https://github.com/babaquero07/pokemon-static-NextJS",
   },
   {
+    id: "rick-and-morty",
     name: "Rick and Morty - Vanilla JS",
-    description:
-      "The project connects with Rick and Morty API and retrieve information about 150 characters. Allows the user interact with the API-provided information by applying filters for gender, status, and species. Additionally, the project includes a page for users to add, edit, and delete comments.",
     tags: [
       {
         name: "HTML",
@@ -248,9 +219,8 @@ const projects = [
     source_code_link: "https://github.com/babaquero07/taller-unidad-1-2",
   },
   {
+    id: "spotifu",
     name: "Spotifu",
-    description:
-      "Exact clone of Spotify web interface. The whole project will be adapted only by changing one font size. Made with modern layout techniques and 100% accessible.",
     tags: [
       {
         name: "HTML",
@@ -270,9 +240,8 @@ const projects = [
     source_code_link: "https://github.com/babaquero07/Spotifu",
   },
   {
+    id: "batata-bit",
     name: "BatataBit",
-    description:
-      "Project developed in the Mobile First course at Platzi, which emphasizes the implementation of the BEM methodology for CSS.",
     tags: [
       {
         name: "HTML",
@@ -292,8 +261,8 @@ const projects = [
     source_code_link: "https://github.com/babaquero07/Spotifu",
   },
   {
+    id: "calendar",
     name: "Calendar",
-    description: "Clone of Google Calendar web interface.",
     tags: [
       {
         name: "HTML",
@@ -313,9 +282,8 @@ const projects = [
     source_code_link: "https://github.com/babaquero07/calendario",
   },
   {
+    id: "country-search",
     name: "Country Search",
-    description:
-      "Interactive experience where users can search for and explore detailed information about countries, utilizing modern technologies such as Apollo Client, React, and GraphQL to achieve a smooth and efficient user interface.",
     tags: [
       {
         name: "ApolloClient",
@@ -335,9 +303,8 @@ const projects = [
     source_code_link: "https://github.com/babaquero07/kimchechallenge",
   },
   {
+    id: "e-commerce",
     name: "E-commerce",
-    description:
-      "Group's bootcamp final project showcases our proficiency in a wide range of technologies, demonstrating our ability to build a fully functional eCommerce platform. With features such as payment integration, product reviews, a chatbot, and an admin panel, our platform provides a seamless and intuitive shopping experience for users while offering convenient management tools for administrators.",
     tags: [
       {
         name: "Node Js",
@@ -370,9 +337,8 @@ const projects = [
     source_code_link: "https://github.com/E-commerce-pf",
   },
   {
+    id: "food-recipes",
     name: "Food Recipes",
-    description:
-      "User-friendly interface for exploring, discovering, and creating food recipes. With the integration of the spoonacular API, users have access to a vast collection of recipes along with relevant details. Whether searching for specific recipes, filtering and sorting results, or creating personal recipes, the application provides a seamless and engaging experience for food enthusiasts and home cooks alike.",
     tags: [
       {
         name: "Node Js",
@@ -404,9 +370,8 @@ const projects = [
     source_code_link: "https://github.com/InmobilApp",
   },
   {
+    id: "inmobil-app",
     name: "InmobilApp",
-    description:
-      "Group's bootcamp final project. With features such as payment integration, product reviews, and an admin panel, our platform provides a seamless and intuitive shopping experience for users while offering convenient management tools for administrators.",
     tags: [
       {
         name: "Node Js",
@@ -438,8 +403,8 @@ const projects = [
     source_code_link: "https://github.com/InmobilApp",
   },
   {
+    id: "trivia-challenge",
     name: "Trivia Challenge",
-    description: "FullStack [MERN] technical test. ",
     tags: [
       {
         name: "Node Js",

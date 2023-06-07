@@ -11,12 +11,24 @@ import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 
+import { useTranslation } from "react-i18next";
+
 const ExperienceCard = ({ experience }) => {
+  const [t, i18n] = useTranslation("global");
+
+  const workId = experience.id;
+
+  const keyDate = `experience.workExperience.${workId}.date`;
+  const date = t(keyDate);
+
+  const keyPoints = `experience.workExperience.${workId}.responsabilites`;
+  const responsabilites = t(keyPoints, { returnObjects: true });
+
   return (
     <VerticalTimelineElement
       contentStyle={{ background: "#1d1836", color: "#fff" }}
       contentArrowStyle={{ borderRight: "7px solid #232631" }}
-      date={experience.date}
+      date={date}
       iconStyle={{ background: experience.iconBg }}
       icon={
         <div className="flex justify-center items-center w-full h-full">
@@ -39,7 +51,7 @@ const ExperienceCard = ({ experience }) => {
       </div>
 
       <ul className="mt-5 list-disc ml-5 space-y-2">
-        {experience.points.map((point, index) => (
+        {responsabilites.map((point, index) => (
           <li
             key={`experience-point-${index}`}
             className="text-white-100 text-[14px] pl-1 tracking-wider"
@@ -53,11 +65,13 @@ const ExperienceCard = ({ experience }) => {
 };
 
 const Experience = () => {
+  const [t, i18n] = useTranslation("global");
+
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>What I have done so far</p>
-        <h2 className={styles.sectionHeadText}>Work Experience.</h2>
+        <p className={styles.sectionSubText}>{t("experience.subText")}</p>
+        <h2 className={styles.sectionHeadText}>{t("experience.headText")}</h2>
       </motion.div>
 
       <div className="mt-20 flex flex-col">

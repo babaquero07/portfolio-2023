@@ -7,6 +7,8 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
+import { useTranslation } from "react-i18next";
+
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -15,6 +17,8 @@ const Contact = () => {
     message: "",
   });
   const [loading, setLoading] = useState(false);
+
+  const [t, i18n] = useTranslation("global");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -41,7 +45,7 @@ const Contact = () => {
       )
       .then(() => {
         setLoading(false);
-        alert("Thank you. I will get back to you as soon as possible.");
+        alert(t("contact.form.submit.successfull"));
 
         setForm({
           name: "",
@@ -52,7 +56,7 @@ const Contact = () => {
       .catch((err) => {
         console.log(err);
         setLoading(false);
-        alert("Something went wrong.");
+        alert(t("contact.form.submit.error"));
       });
   };
 
@@ -62,8 +66,8 @@ const Contact = () => {
         variants={slideIn("left", "tween", 0.2, 1)}
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
       >
-        <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
+        <p className={styles.sectionSubText}>{t("contact.subText")}</p>
+        <h3 className={styles.sectionHeadText}>{t("contact.headText")}</h3>
 
         <form
           ref={formRef}
@@ -71,35 +75,41 @@ const Contact = () => {
           className="mt-12 flex flex-col gap-8"
         >
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your Name</span>
+            <span className="text-white font-medium mb-4">
+              {t("contact.form.labels.name")}
+            </span>
             <input
               type="text"
               name="name"
               value={form.name}
               onChange={handleChange}
-              placeholder="What's your name?"
+              placeholder={t("contact.form.inputs.placeholder.name")}
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your Email</span>
+            <span className="text-white font-medium mb-4">
+              {t("contact.form.labels.email")}
+            </span>
             <input
               type="email"
               name="email"
               value={form.email}
               onChange={handleChange}
-              placeholder="What's your email?"
+              placeholder={t("contact.form.inputs.placeholder.email")}
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your Message</span>
+            <span className="text-white font-medium mb-4">
+              {t("contact.form.labels.email")}
+            </span>
             <textarea
               rows="7"
               name="message"
               value={form.message}
               onChange={handleChange}
-              placeholder="Your message..."
+              placeholder={t("contact.form.inputs.placeholder.message")}
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
@@ -107,7 +117,9 @@ const Contact = () => {
             className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
             type="submit"
           >
-            {loading ? "Sending..." : "Send"}
+            {loading
+              ? t("contact.form.button.stateText.loading")
+              : t("contact.form.button.stateText.default")}
           </button>
         </form>
       </motion.div>

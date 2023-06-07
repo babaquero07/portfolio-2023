@@ -7,15 +7,22 @@ import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion.js";
 
+import { useTranslation } from "react-i18next";
+
 const ProjectCard = ({
+  id,
   index,
   name,
-  description,
   tags,
   image,
   deploy_link,
   source_code_link,
 }) => {
+  const [t, i18n] = useTranslation("global");
+
+  const projectKey = `works.projects.${id}.description`;
+  const projectDescription = t(projectKey);
+
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Titl
@@ -59,7 +66,9 @@ const ProjectCard = ({
 
         <div className="mt-5">
           <h3 className="text-white font-bold text-[24px]">{name}</h3>
-          <p className="mt-2 text-secondary text-[14px]">{description}</p>
+          <p className="mt-2 text-secondary text-[14px]">
+            {projectDescription}
+          </p>
         </div>
 
         <div className="mt-4 flex flex-wrap gap-2">
@@ -75,11 +84,13 @@ const ProjectCard = ({
 };
 
 const Works = () => {
+  const [t, i18n] = useTranslation("global");
+
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>My work</p>
-        <h2 className={styles.sectionHeadText}>Projects.</h2>
+        <p className={styles.sectionSubText}>{t("works.subText")}</p>
+        <h2 className={styles.sectionHeadText}>{t("works.headText")}</h2>
       </motion.div>
 
       <div className="w-full flex">
@@ -87,12 +98,7 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leadgin-[30px]"
         >
-          Following projects showcases my skills and experience in frontend
-          development. Each project is accompanied by a brief description and
-          includes links to their respective code repositories and live demos.
-          These projects are tangible examples of my ability to tackle intricate
-          problems, work with diverse technologies, and successfully manage
-          projects.
+          {t("works.description")}
         </motion.p>
       </div>
 
