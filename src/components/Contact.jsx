@@ -85,6 +85,7 @@ const Contact = () => {
               onChange={handleChange}
               placeholder={t("contact.form.inputs.placeholder.name")}
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              required={true}
             />
           </label>
           <label className="flex flex-col">
@@ -98,6 +99,7 @@ const Contact = () => {
               onChange={handleChange}
               placeholder={t("contact.form.inputs.placeholder.email")}
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              required={true}
             />
           </label>
           <label className="flex flex-col">
@@ -111,6 +113,7 @@ const Contact = () => {
               onChange={handleChange}
               placeholder={t("contact.form.inputs.placeholder.message")}
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              required={true}
             />
           </label>
           <button
